@@ -7,14 +7,14 @@ This repository is for our paper A Deep Light-weight Face Mask Detector with Res
 
 Coronavirus disease 2019 has seriously affected the world. One major protective measure for individuals is to wear masks in public areas. In this paper, we propose a single-shot light-weight face mask detector (SL-FMD) to meet the low computational requirements for embedded systems, as well as achieve high performance. To cope with the low feature extraction capability caused by the light-weight model, we propose two novel methods to enhance the model's feature extraction process. First, to extract rich context information and focus on crucial face masks related regions, we propose a novel residual context attention module. Second, in order to learn more discriminated features for faces with and without masks, we introduce a novel auxiliary task as synthesized Gaussian heatmap regression.
 
-![](https://github.com/xinqi-fan/Face-Mask-Detection/blob/master/figure/pipeline.png)
+![](https://github.com/xinqi-fan/Face-Mask-Detection/blob/main/figure/pipeline.png)
 Figure. Pipeline of SL-FMD
 
 ## Usage
 ### Requirement
 Python 3.6
-
 PyTorch 1.6
+Pandas
 
 
 ### Download
@@ -35,7 +35,7 @@ python tools/heatmap_gaussian_aizoo.py OR tools/heatmap_gaussian_moxa.py
 
 ### Train the model
 
-* Download [ImageNet pretrained weights](https://drive.google.com/file/d/1BODjD9TtoXtGrna5dc-63GbpmMySW416/view?usp=sharing).
+* Download [ImageNet pretrained weights](https://drive.google.com/file/d/1BODjD9TtoXtGrna5dc-63GbpmMySW416/view?usp=sharing), and place it in the weight folder.
 * Run the following code (More settings if not available at input arguments can be found in data/config.py.).
 
 ```
@@ -59,7 +59,7 @@ python evaluation_mAP.py
 
 ## Result
 
-![](https://github.com/xinqi-fan/Face-Mask-Detection/blob/master/figure/result.png)
+![](https://github.com/xinqi-fan/Face-Mask-Detection/blob/main/figure/result.png)
 
 Figure. Result demonstration
 
