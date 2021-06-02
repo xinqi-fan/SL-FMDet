@@ -1,14 +1,14 @@
-# A Deep Light-weight Face Mask Detector
+# A Deep Learning based Light-weight Face Mask Detector to Fight Against COVID-19
 
 by Xinqi Fan, Mingjie Jiang, and Hong Yan
 
 ## Introduction
-This repository is for our paper A Deep Light-weight Face Mask Detector with Residual Context Attention and Gaussian Heatmap to Fight Against the COVID-19 Pandemic. 
+This repository is for our paper A Deep Learning based Light-weight Face Mask Detector with Residual Context Attention and Gaussian Heatmap to Fight Against COVID-19. 
 
-Coronavirus disease 2019 has seriously affected the world. One major protective measure for individuals is to wear masks in public areas. In this paper, we propose a single-shot light-weight face mask detector (SL-FMD) to meet the low computational requirements for embedded systems, as well as achieve high performance. To cope with the low feature extraction capability caused by the light-weight model, we propose two novel methods to enhance the model's feature extraction process. First, to extract rich context information and focus on crucial face masks related regions, we propose a novel residual context attention module. Second, in order to learn more discriminated features for faces with and without masks, we introduce a novel auxiliary task as synthesized Gaussian heatmap regression.
+Coronavirus disease 2019 has seriously affected the world. One major protective measure for individuals is to wear masks in public areas. In this paper, we propose a single-shot light-weight face mask detector (SL-FMDet) to meet the low computational requirements for embedded systems, as well as achieve high performance. To cope with the low feature extraction capability caused by the light-weight model, we propose two novel methods to enhance the model's feature extraction process. First, to extract rich context information and focus on crucial face masks related regions, we propose a novel residual context attention module. Second, in order to learn more discriminated features for faces with and without masks, we introduce a novel auxiliary task as synthesized Gaussian heatmap regression.
 
 ![](https://github.com/xinqi-fan/Face-Mask-Detection/blob/main/figure/pipeline.png)
-Figure. Pipeline of SL-FMD
+Figure. Pipeline of SL-FMDet
 
 ## Usage
 ### Requirement
@@ -16,7 +16,7 @@ Python 3.6
 
 PyTorch 1.6
 
-Pandas
+Pandas 1.2.3
 
 
 ### Download
